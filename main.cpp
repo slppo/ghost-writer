@@ -9,13 +9,14 @@
 
 const std::size_t DiscardLength = 20;
 const std::size_t AcceptLength = 4;
+const std::string DictionaryFile = "dict";
 
 // throws std::runtime_error
 toj::Trie ReadDictionary(const std::string &file);
 char RandomLowerAlpha();
 void ThreadEntry();
 
-toj::Trie dict = ReadDictionary("dict");
+toj::Trie dict = ReadDictionary(DictionaryFile);
 
 int main()
 {
